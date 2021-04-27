@@ -80,9 +80,10 @@ function count(){
 
 
 function counting(){
-    remseconds=seconds % 60;
-    minutes=minuts % 60;
-    hours=Math.floor(minuts / 60);
+   remseconds=seconds % 60;
+   minuts=--;
+   minutes=minuts % 60;
+   hours=Math.floor(minutes / 60);
     
     if(hours < 10){
         hours = "0" + hours;
