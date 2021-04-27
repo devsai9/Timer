@@ -50,13 +50,7 @@ function count(){
         if(toCount == true){
             seconds--;
             remseconds=seconds % 60;
-            minuts=--;
-            minutes=minuts % 60;
-            hours=Math.floor(minutes / 60);
-            
-            if(hours < 10){
-                hours = "0" + hours;
-            }
+            minuts=Math.floor(seconds / 60);
     
             if(minuts < 10){
                 minuts = "0" + minuts;
@@ -66,7 +60,7 @@ function count(){
                remseconds = "0" + remseconds;
             }
 
-            container.innerHTML=hours+":" + minuts+":" + remseconds;
+            container.innerHTML= minuts+":" + remseconds;
         }
     }
     else{
@@ -80,14 +74,8 @@ function count(){
 
 
 function counting(){
-   remseconds=seconds % 60;
-   minuts=--;
-   minutes=minuts % 60;
-   hours=Math.floor(minutes / 60);
-    
-    if(hours < 10){
-        hours = "0" + hours;
-    }
+    remseconds=seconds % 60;
+    minuts=Math.floor(seconds / 60);
     
     if(minuts < 10){
         minuts = "0" + minuts;
@@ -98,8 +86,7 @@ function counting(){
     }
 
 
-    container.innerHTML=hours+":" + minuts+":" + remseconds;
+    container.innerHTML=minuts+":" + remseconds;
     setInterval(count, 1000);
 }
-
 
