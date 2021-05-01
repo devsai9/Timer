@@ -90,3 +90,6 @@ function counting(){
     setInterval(count, 1000);
 }
 
+function addToHistory(){
+    history.pushState({page: 2}, "Timer actiavted", "?timer_activated=true");
+}
