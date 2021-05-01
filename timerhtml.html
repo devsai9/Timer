@@ -24,7 +24,7 @@
                 <button class="btn start" id="continue" value="1" onclick="check(this)">Resume</button>
                 <button class="btn stop" id="stop" value="0" onclick="check(this)">Stop</button>
                 <button class="btn start" id="ok" onclick="toSubmit(); timerActivatedInUrl()">Submit</button>
-                <button id="reset" onclick="reload()">Reset</button>
+                <button id="reset" onclick="reload(); timerDeactivatedInUrl()">Reset</button>
             </div>
         </div>
         <script type="text/javascript" src="timerjs.js"></script>
