@@ -96,3 +96,4 @@ function timerActivatedInUrl(){
 
 function timerDeactivatedInUrl(){
     history.replaceState({page: 1}, "Timer Deactivated", "?timer_activated=false");
+}
