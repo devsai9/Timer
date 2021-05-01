@@ -91,5 +91,5 @@ function counting(){
 }
 
 function addToHistory(){
-    history.pushState({page: 2}, "Timer actiavted", "?timer_activated=true");
+    history.replaceState({page: 2}, "Timer actiavted", "?timer_activated=true");
 }
